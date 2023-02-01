@@ -1,5 +1,11 @@
 <h1>Login</h1>
 <!--since post method: means post to a route with /register-->
+<!--error msg display below-->
+<% if (messages.error) {%>
+        <%= messages.error %>
+   <%   }   %>
+
+
 <form action="/login" method="POST">
 <div>
     <label for="email">Email: </label>
